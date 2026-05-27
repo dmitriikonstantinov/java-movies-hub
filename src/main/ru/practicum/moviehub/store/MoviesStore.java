@@ -21,12 +21,15 @@ public class MoviesStore {
         movies.put(movie.getId(), movie);
         return movie;
     }
+
     public Movie getById(int id) {
         return movies.get(id);
     }
-public Movie delete(int id) {
+
+    public Movie delete(int id) {
         return movies.remove(id);
-}
+    }
+
     public void clear() {
         movies.clear();
         nextId = 1;
