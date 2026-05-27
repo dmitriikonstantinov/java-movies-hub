@@ -23,6 +23,7 @@ public class MoviesServer {
     public MoviesServer() {
         this(new MoviesStore(), 8080);
     }
+
     public void start() {
         server.start();
         System.out.println("Сервер запущен");
@@ -32,6 +33,7 @@ public class MoviesServer {
         server.stop(0);
         System.out.println("Сервер остановлен");
     }
+
     public MoviesStore getStore() {
         return store;
     }
